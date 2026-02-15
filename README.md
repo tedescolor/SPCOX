@@ -15,6 +15,10 @@ R code to fit **penalized spatial Cox proportional hazards** models over 2D tria
   - Uses London ward/boundary shapefiles and the `spatsurv::fstimes` dataset.
   - Fits the same spatial PH model with diurnal terms (Fourier sines/cosines).
   - Generates mesh/time maps, spatial field maps, and risk maps at multiple times of day.
+- **empirical_san_francisco.R** — End-to-end analysis for San Francisco:
+  - Uses San Franscio data taken from: https://data.sfgov.org/Public-Safety/Fire-Department-and-Emergency-Medical-Services-Dis/nuek-vuh3/about_data [accessed 10/01/2026]
+  - Fits the same spatial PH model with diurnal terms (Fourier sines/cosines).
+  - Generates mesh/time maps, spatial field maps, and risk maps at multiple times of day.
 - **simulation_script.R** — Full simulation pipeline:
   - Simulates data on a “horseshoe” domain (from **fdaPDE**) with varying sample sizes and censoring.
   - Selects the smoothing parameter via K-fold CV of the partial likelihood (parallel option available).
